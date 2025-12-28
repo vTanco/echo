@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 struct ComputeSessionView: View {
     @StateObject private var computeService = ComputeService.shared
@@ -265,7 +266,7 @@ struct ComputeSessionView: View {
                     }
                 }
             )
-            .shadow(color: (computeService.isProcessing ? .accentOrange : .accentCyan).opacity(0.4), radius: 20, y: 10)
+            .shadow(color: (computeService.isProcessing ? Color.accentOrange : Color.accentCyan).opacity(0.4), radius: 20, y: 10)
         }
         .disabled(!deviceMonitor.isReadyForCompute && !computeService.isProcessing)
         .opacity((!deviceMonitor.isReadyForCompute && !computeService.isProcessing) ? 0.5 : 1)

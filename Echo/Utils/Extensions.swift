@@ -1,15 +1,9 @@
 import SwiftUI
 
 // MARK: - Color Extensions
+// Note: Individual colors (accentCyan, accentMagenta, etc.) are auto-generated from Assets.xcassets
+
 extension Color {
-    static let accentCyan = Color("AccentCyan")
-    static let accentMagenta = Color("AccentMagenta")
-    static let accentViolet = Color("AccentViolet")
-    static let accentGreen = Color("AccentGreen")
-    static let accentOrange = Color("AccentOrange")
-    static let cardBackground = Color("CardBackground")
-    static let darkBackground = Color("DarkBackground")
-    
     // Gradient presets
     static let neonGradient = LinearGradient(
         colors: [.accentCyan, .accentMagenta],
