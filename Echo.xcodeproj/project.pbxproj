@@ -29,6 +29,14 @@
 		E000000000000020 /* WithdrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100000000000020 /* WithdrawView.swift */; };
 		E000000000000021 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100000000000021 /* SettingsView.swift */; };
 		E000000000000022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E100000000000022 /* Assets.xcassets */; };
+		E000000000000023 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100000000000023 /* HapticManager.swift */; };
+		E000000000000024 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100000000000024 /* LoadingView.swift */; };
+		E000000000000025 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100000000000025 /* ToastView.swift */; };
+		E000000000000026 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100000000000026 /* EmptyStateView.swift */; };
+		E000000000000027 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100000000000027 /* APIClient.swift */; };
+		E000000000000028 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100000000000028 /* AuthManager.swift */; };
+		E000000000000029 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100000000000029 /* LoginView.swift */; };
+		E000000000000030 /* CoreMLRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100000000000030 /* CoreMLRunner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +63,14 @@
 		E100000000000020 /* WithdrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawView.swift; sourceTree = "<group>"; };
 		E100000000000021 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E100000000000022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E100000000000023 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		E100000000000024 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E100000000000025 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		E100000000000026 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		E100000000000027 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E100000000000028 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		E100000000000029 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E100000000000030 /* CoreMLRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLRunner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +120,7 @@
 		E300000000000003 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E300000000000014 /* Auth */,
 				E300000000000004 /* Onboarding */,
 				E300000000000005 /* Dashboard */,
 				E300000000000006 /* Compute */,
@@ -168,6 +185,9 @@
 				E100000000000008 /* ComputeService.swift */,
 				E100000000000009 /* DeviceMonitorService.swift */,
 				E100000000000010 /* EarningsService.swift */,
+				E100000000000027 /* APIClient.swift */,
+				E100000000000028 /* AuthManager.swift */,
+				E100000000000030 /* CoreMLRunner.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -177,6 +197,7 @@
 			children = (
 				E100000000000006 /* Extensions.swift */,
 				E100000000000007 /* Constants.swift */,
+				E100000000000023 /* HapticManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -197,8 +218,19 @@
 				E100000000000013 /* PulsingOrb.swift */,
 				E100000000000014 /* StatCard.swift */,
 				E100000000000015 /* EarningsChart.swift */,
+				E100000000000024 /* LoadingView.swift */,
+				E100000000000025 /* ToastView.swift */,
+				E100000000000026 /* EmptyStateView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E300000000000014 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E100000000000029 /* LoginView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		E300000000000099 /* Products */ = {
@@ -237,7 +269,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					E400000000000001 = {
 						CreatedOnToolsVersion = 15.0;
@@ -300,6 +332,14 @@
 				E000000000000019 /* EarningsHistoryView.swift in Sources */,
 				E000000000000020 /* WithdrawView.swift in Sources */,
 				E000000000000021 /* SettingsView.swift in Sources */,
+				E000000000000023 /* HapticManager.swift in Sources */,
+				E000000000000024 /* LoadingView.swift in Sources */,
+				E000000000000025 /* ToastView.swift in Sources */,
+				E000000000000026 /* EmptyStateView.swift in Sources */,
+				E000000000000027 /* APIClient.swift in Sources */,
+				E000000000000028 /* AuthManager.swift in Sources */,
+				E000000000000029 /* LoginView.swift in Sources */,
+				E000000000000030 /* CoreMLRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +351,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -341,6 +382,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2FNUDT6JCA;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -364,6 +406,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -374,6 +417,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -404,6 +448,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2FNUDT6JCA;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -420,6 +465,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -432,7 +478,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentCyan;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Echo;
@@ -462,7 +507,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentCyan;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Echo;

@@ -75,7 +75,7 @@ extension View {
 // MARK: - Shimmer Effect
 struct ShimmerModifier: ViewModifier {
     @State private var phase: CGFloat = 0
-    let delay: Double
+    var delay: Double = 0
     
     func body(content: Content) -> some View {
         content
